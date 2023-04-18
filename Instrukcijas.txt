@@ -1,0 +1,32 @@
+Sveiks, Matīss!
+
+Paldies par sarunu!
+
+Nosūtu tev pārbaudes darbu.
+
+Jāuztaisa vienkāršu brīvdienu izgūšanas aplikāciju, kas pēc valsts un gada izvēles lejuplādē no brīvi pieejama REST API attiecīgās valsts brīvdienu kalendāru, attēlo uz ekrāna un pēc pieprasījuma saglabā datubāzē.
+
+Korekti jāapstrādā gadījumi, ja resurss nav pieejams (server down/valsts nav atrasta/gads nav pieejams/mainījies datu formāts)
+
+Nosacījumi:
+
+	Valstis netiek atsevišķi nekur saglabātas, bet tiek ielādētas izpildes laikā no ārējā resursa (var ielādēt vienreiz pie programmas palaišanas).
+	Lietotājam jāpiedāvā iespēja meklēt valsti pēc nepilnīgi ievadīta teksta. Ideāli, ja meklēšana notiek fonā, reaģējot uz lietotāja ievadīto vērtību (tas ir, bez atsevišķas pogas nospiešanas).
+	Datubāze pēc izvēles, kamēr vien tā ir brīvi pieejama (piemēram, sqLite, MSSQL Express, MSSQL Developer edition, MariaDB, Postgres utt.).
+	
+Papildus noderīga informācija:
+
+Ārējais resurss valstu informācijas ielādei - https://restcountries.com/ vai https://github.com/hengkiardo/restcountries
+
+Brīvdienu API https://date.nager.at/ (https://date.nager.at/Api). Piemērs: https://date.nager.at/api/v3/PublicHolidays/2022/LV
+
+Ja iepriekš ar REST neesi strādājis – quick & dirty risinājumi no kā aizņemties pamata funkcionalitāti: RestSharp, Newtonsoft.Json (linki uz GitHub projektiem, bet vari izmantot arī NuGet pakotnes).
+ Praktiski mūs interesē nevis pats risinājums, bet kā to risināsi.
+
+ Mēģini iekļauties 4 stundās vai arī  izdari tik, cik vari paspēt 4 stundās, pierakstot, ko būtu darījis tālāk.
+
+ Rezultātu ieliec personīgajā GitHub projektā un atsūti linku.
+
+ 
+
+Ar cieņu,

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PublicHolidayDbModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Meditec uzdevums</h1>
+</div>
+
+<table id="holidayList" class="table table-bordered visually-hidden">
+    <thead>
+        <tr>
+            <th scope="col">Datums</th>
+            <th scope="col">Brīvdienas nosaukums</th>
+            <th scope="col">Valsts valodā nosaukums</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            if (Model != null)
+            {
+                foreach (PublicHolidayDbModel holiday in Model)
+                {
+                    <tr>
+                        <th>@holiday.Date.ToString("dd/MM/yyyy")</th>
+                        <th>@holiday.Name</th>
+                        <th>@holiday.LocalName</th>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>

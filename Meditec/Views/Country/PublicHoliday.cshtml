@@ -1,0 +1,31 @@
+﻿@model IEnumerable<PublicHolidayModel>;
+@{
+    if (Model != null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Datums</th>
+                    <th scope="col">Brīvdienas nosaukums</th>
+                    <th scope="col">Valsts valodā nosaukums</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (PublicHolidayModel holiday in Model)
+                    {
+                        <tr>
+                            <th>@holiday.Date.ToString("dd/MM/yyyy")</th>
+                            <th>@holiday.Name</th>
+                            <th>@holiday.LocalName</th>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else{
+        <h2>Izvēlētā valsts nav API sarakstā</h2>
+    }
+}
+

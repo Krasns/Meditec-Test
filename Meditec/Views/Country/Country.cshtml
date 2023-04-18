@@ -1,0 +1,16 @@
+﻿@model Meditec.Models.CountryModel;
+
+<h2>Meklēt valsts brīvdienu sarakstu</h2>
+
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            <label>Select a country:</label>
+            <input class="form-control" id="CountryName" name="CountryName" placeholder="Enter country name" type="text" value="" />
+        </div>
+    }
+</div>
+
+
+<div id="publicHoliday"></div>
